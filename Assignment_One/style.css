@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Style for outer container*/
+.outer-container {
+  background-color: wheat;
+  height: 100vp;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 5% 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Style for main heading*/
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Styles for outer div container1-2*/
+.container1-2 {
+  margin: 20 50 50 50;
+}
+
+/*Styles for container 1 and 2*/
+.container1,
+.container2 {
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for heading 2 */
+h2 {
+  padding: 15px;
+  background-color: rgb(225, 233, 230);
+}
+
+/* Background styles for form,table */
+.container1 form,
+.container2 .table {
+  padding: 15px;
+  background-color: rgb(133, 151, 219);
+}
+
+/* Font style for label */
+form label {
+  display: block;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/*Style for the input field*/
+form input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for error message */
+#itemname,
+#price,
+#quantity,
+#date {
+  visibility: hidden;
+  color: red;
+  font-size: smaller;
+}
+
+/* Styles for the button */
+button {
+  padding: 10px 20px;
+  background-color: rgb(44, 44, 46);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(4, 4, 4);
+  }
+}
+
+/* Styles for the form button (Add items) */
+form button {
+  display: block;
+  width: 20%;
+}
+
+/* Styles for the entire table container */
+.container2 {
+  overflow-x: auto;
+}
+
+/* Border Styles for table headers and table data */
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  background-color: azure;
+}
+
+/* Styles for table heder, table data */
+td,
+th {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  font-size: 18px;
+  width: 10%;
+  font-weight: bold;
+}
+
+/* smaller screen */
+@media (max-width: 768px) {
+  .outer-container {
+    margin: 20px;
+  }
+
+  form button {
+    width: 30%;
+  }
+}
