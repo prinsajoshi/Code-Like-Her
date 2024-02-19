@@ -1,0 +1,71 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: rgb(180, 149, 221);
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #040404;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 30px 30px 60px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.recipes > div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.recipes h2 {
+  margin-top: 0;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #121213;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #3d3e3f;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  image-rendering: crisp-edges;
+}
